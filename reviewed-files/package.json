@@ -1,0 +1,25 @@
+{
+  "name": "hunk-reviewed-files-extension",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "hunk": {
+    "extensions": [
+      "./index.tsx"
+    ]
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@opentui/core": "0.4.3",
+    "@opentui/react": "0.4.3",
+    "@types/bun": "1.3.14",
+    "@types/react": "19.2.14",
+    "hunkdiff": "0.18.0-beta.0",
+    "react": "19.2.4",
+    "typescript": "5.9.3"
+  }
+}
