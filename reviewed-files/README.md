@@ -4,9 +4,9 @@ A session-only Hunk extension that adds review progress and compact file collaps
 
 - `○` changes to a green `●` when a file is reviewed.
 - Existing inline notes remain visible in the sidebar as Hunk's `*N` badge.
-- `v` toggles the selected file's reviewed state. Marking reviewed collapses it; unmarking expands it.
+- `p` toggles the selected file's reviewed state. Marking reviewed collapses it; unmarking expands it.
 - `x` collapses or expands the selected file without changing its reviewed state.
-- Clicking the circle toggles only the review mark. Hunk's current sidebar API cannot switch file presentations from a mouse handler, so use `v` when you want review + collapse together.
+- Clicking the circle toggles only the review mark. Hunk's current sidebar API cannot switch file presentations from a mouse handler, so use `p` when you want review + collapse together.
 - Review marks reset when Hunk exits and are invalidated if a file's patch changes during the session.
 
 ## Requirements
@@ -41,7 +41,7 @@ The command ids are `reviewed-files.toggle-reviewed`, `reviewed-files.toggle-col
 
 ```toml
 [keybindings]
-"reviewed-files.toggle-reviewed" = "v"
+"reviewed-files.toggle-reviewed" = "p"
 "reviewed-files.toggle-collapse" = "x"
 ```
 

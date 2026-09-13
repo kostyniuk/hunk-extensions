@@ -67,7 +67,7 @@ function ReviewedFilesSidebar({
     >
       <box style={{ width: "100%", flexDirection: "column", backgroundColor: theme.panel }}>
         <text
-          content={` ${reviewedCount}/${files.length} reviewed · v mark · x fold`}
+          content={` ${reviewedCount}/${files.length} reviewed · p mark · x fold`}
           style={{ fg: theme.muted, bg: theme.panel }}
         />
         {files.map((file) => {
@@ -180,7 +180,7 @@ export default function registerReviewedFiles(hunk: HunkExtensionAPI) {
   });
 
   hunk.registerCommand(
-    { id: "toggle-reviewed", title: "Mark selected file reviewed/unreviewed", key: "v" },
+    { id: "toggle-reviewed", title: "Mark selected file reviewed/unreviewed", key: "p" },
     (ctx) => {
       const file = ctx.selection.file;
       if (!file) {
